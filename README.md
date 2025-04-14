@@ -1,6 +1,6 @@
 # SHARE Space 🌈  
 **Stories, Hope, and Real Experiences**  
-A digital storytelling platform from the Autism Program at Boston Medical Center (BMC) — collecting heartfelt letters from caregivers, siblings, autistic individuals, and allies.
+A digital storytelling platform from the Autism Program at Boston Medical Center (BMC) — collecting heartfelt letters from Parents, caregivers, siblings, autistic individuals, and allies.
 
 ---
 
