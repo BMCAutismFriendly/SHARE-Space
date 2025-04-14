@@ -133,10 +133,4 @@ Thank you for continuing this project. Please:
 - Keep submissions anonymous/ not (confirm with supervisor)
 - Honor/respect the stories shared
 - Make small design updates with care and test before pushing
-
-Feel free to reach out to the Autism Program at BMC for guidance, or continue building this platform with love and inclusivity.
-
----
-
-## 📄 License
-This project is developed for internal educational and outreach use. Contact the BMC Autism Program for reuse permissions.
+- Thank you again! :) 
