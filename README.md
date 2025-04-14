@@ -100,7 +100,7 @@ To deploy or update the site:
 4. After a few moments, a link will appear that looks like: 
    ```
 
-          https://bmcautismfriendly.github.io/SHARE-Space/
+ https://bmcautismfriendly.github.io/SHARE-Space/
    
 ```
 
