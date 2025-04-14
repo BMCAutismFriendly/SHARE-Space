@@ -97,8 +97,9 @@ To deploy or update the site:
 1. Go to the repository’s **Settings > Pages**.
 2. Under **Source**, choose the `main` branch and `/ (root)` folder.
 3. Click **Save**.
-4. After a few moments, a link will appear that looks like:
-   ```https://bmcautismfriendly.github.io/SHARE-Space/
+4. After a few moments, a link will appear that looks like: https://bmcautismfriendly.github.io/SHARE-Space/
+   ```
+   
 ```
 
 You can now share this link!
