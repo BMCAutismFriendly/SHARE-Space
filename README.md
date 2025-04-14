@@ -33,19 +33,30 @@ const text = {
 Update the content inside the quotes for any letter key (letter1, letter2, etc.).
 
 🆕 To Add a New Letter:
-1. In index.html,
-2. scroll to the Read Letters Section.
+In index.html, scroll to the Read Letters Section.
+
 Find the correct letter category grid:
+
+html
+Copy
+Edit
 <div class="envelope-grid" data-category="parents">
   <!-- Letter cards go here -->
 </div>
-3. Inside that div, add a new letter envelope like this:
+Inside that div, add a new letter envelope like this:
+
+html
+Copy
+Edit
 <div class="envelope-card" onclick="openModal('letter6')">
   <img src="images/envelope-icon.png" alt="Letter from a Parent" />
 </div>
-4. Then go to script.js and add the content:
-letter6: "This is your new letter content."
+Then go to script.js and add the content:
 
+js
+Copy
+Edit
+letter6: "This is your new letter content."
 📂 How to Organize Letters by Category
 Letters are grouped using the data-category attribute:
 
@@ -58,6 +69,10 @@ autistic
 strangers
 
 Each group looks like:
+
+html
+Copy
+Edit
 <div class="envelope-grid" data-category="siblings">
   <div class="envelope-card" onclick="openModal('letter2')">
     <img src="images/envelope-icon.png" alt="Letter from a Sibling" />
@@ -83,30 +98,44 @@ Submissions trigger a JavaScript confirmation message.
 
 Option B: REDCap Form
 To use a REDCap form instead:
-1. Locate this section in the HTML:
+
+Locate this section in the HTML:
+
+html
+Copy
+Edit
 <a href="#" class="redcap-button" target="_blank">Go to REDCap Form</a>
-2. Replace the href="#" with your actual REDCap survey link.
+Replace the href="#" with your actual REDCap survey link.
 
 🖼️ How to Add or Change Images
 To Add:
-1. Navigate to the /images folder in your GitHub repository.
-2.Click Add file > Upload files.
-3. Upload the new image.
+Navigate to the /images folder in your GitHub repository.
+
+Click Add file > Upload files.
+
+Upload the new image.
 
 To Use in HTML:
 Update the image src path:
-<img src="images/your-new-image.png" alt="Your description here" />
 
+html
+Copy
+Edit
+<img src="images/your-new-image.png" alt="Your description here" />
 🛠️ How to Edit the Website
 To Edit Locally:
-1.Clone the repo to your desktop.
-2. Open index.html with VS Code or any text editor.
-3.Edit, save, and preview changes in your browser.
+Clone the repo to your desktop.
+
+Open index.html with VS Code or any text editor.
+
+Edit, save, and preview changes in your browser.
 
 To Push Live:
-1. Commit changes via GitHub Desktop or CLI.
-2. Push to main branch.
-3. Visit the GitHub Pages site — changes are instantly live.
+Commit changes via GitHub Desktop or CLI.
+
+Push to main branch.
+
+Visit the GitHub Pages site — changes are instantly live.
 
 🧠 Tips for Future Interns
 If you’re new to HTML/CSS/JS, don’t worry — the structure is intuitive.
@@ -116,3 +145,4 @@ When adding letters, be consistent with naming (e.g., letter6, letter7, etc.)
 Always test your updates locally before pushing to GitHub.
 
 If using REDCap, coordinate with the Autism Program supervisor to update the form link.
+
