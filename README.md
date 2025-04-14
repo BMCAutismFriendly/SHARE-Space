@@ -1,6 +1,6 @@
 # SHARE Space: Stories, Hope, and Real Experiences
 
-**Autism Program Project**
+**Autism Program**
 
 Welcome to the GitHub repository for **SHARE Space**, a digital storytelling platform created by the Autism Program at Boston Medical Center (BMC). This project was built to support patients, caregivers, autistic individuals, and allies by showcasing powerful, anonymous(or not) letters of encouragement, love, and hope.
 
