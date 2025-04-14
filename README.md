@@ -9,7 +9,7 @@ A digital storytelling platform from the Autism Program at Boston Medical Center
 
 **Built with:**
 - HTML, CSS, JavaScript
-- GitHub Pages (for free and easy hosting)
+- GitHub Pages (hosted)
 
 ---
 
