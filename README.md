@@ -1,148 +1,140 @@
-# SHARE Space 🌈  
-**Stories, Hope, and Real Experiences**  
-A digital storytelling platform from the Autism Program at Boston Medical Center (BMC) — collecting heartfelt letters from Parents, caregivers, siblings, autistic individuals, and allies.
+# SHARE Space: Stories, Hope, and Real Experiences
+
+**A Boston Medical Center Project**
+
+Welcome to the GitHub repository for **SHARE Space**, a digital storytelling platform created by the Autism Program at Boston Medical Center (BMC). This project was built to support patients, caregivers, autistic individuals, and allies by showcasing powerful, anonymous(or not) letters of encouragement, love, and hope.
 
 ---
 
-## 📁 Project Overview  
-**SHARE Space** is designed to offer hope, encouragement, and community through the power of shared letters. Visitors can read from a growing collection or submit their own letter directly through the site or a REDCap form.
-
-**Built with:**
-- HTML, CSS, JavaScript
-- GitHub Pages (hosted)
+## 🌐 Live Site
+Access the project live here: [https://bmcautismfriendly.github.io/SHARE-Space/]
 
 ---
 
-## 🔗 Live Website  
-👉 [Click here to view the SHARE Space website](https://bmcautismfriendly.github.io/SHARE-Space/)  
+## 📁 Project Structure
+
+```
+├── index.html                # Main HTML page
+├── style.css                 # All site styles
+├── script.js                 # JavaScript for interactivity
+├── images/                   # Contains all images used (logo, envelope icons)
+│   └── envelope-icon.png
+│   └── autism-logo.JPG
+│   └── bmc-logo.png
+├── letters/                  # Optional folder for storing text copies or templates of letters
+```
 
 ---
 
-## ✏️ How to Add or Update Letters
+## 💡 Project Purpose
+SHARE Space (Stories, Hope, and Real Experiences) is a welcoming digital platform designed to:
+- Collect and share heartfelt letters from members of the autism community
+- Encourage individuals who are facing difficult moments
+- Provide a safe, uplifting space for expression
+- Showcase anonymous submissions from caregivers, siblings, autistic individuals, and allies
 
-### 🔄 To Update an Existing Letter:
-1. Open the `script.js` file.
-2. Find the `openModal()` function.
-3. You’ll see a block like this:
-```js
-const text = {
-  letter1: "Dear friend, you are not alone...",
-  letter2: "To my child...",
-  ...
-};
-Update the content inside the quotes for any letter key (letter1, letter2, etc.).
+---
 
-🆕 To Add a New Letter:
-In index.html, scroll to the Read Letters Section.
+## 🛠️ How to Edit, Update, or Maintain This Project
 
-Find the correct letter category grid:
+### 🔁 General Instructions
+1. **Clone or download the repository** to your local machine.
+2. Open the files in a code editor like VS Code.
+3. Make changes to the relevant HTML, CSS, or JS files.
+4. Push updates to GitHub.
 
-html
-Copy
-Edit
+### ✍️ Updating Letters
+- Navigate to the `index.html` file.
+- Locate the `#letters-section`.
+- Add or update envelope cards like this:
+```html
 <div class="envelope-grid" data-category="parents">
-  <!-- Letter cards go here -->
-</div>
-Inside that div, add a new letter envelope like this:
-
-html
-Copy
-Edit
-<div class="envelope-card" onclick="openModal('letter6')">
-  <img src="images/envelope-icon.png" alt="Letter from a Parent" />
-</div>
-Then go to script.js and add the content:
-
-js
-Copy
-Edit
-letter6: "This is your new letter content."
-📂 How to Organize Letters by Category
-Letters are grouped using the data-category attribute:
-
-parents
-
-siblings
-
-autistic
-
-strangers
-
-Each group looks like:
-
-html
-Copy
-Edit
-<div class="envelope-grid" data-category="siblings">
-  <div class="envelope-card" onclick="openModal('letter2')">
-    <img src="images/envelope-icon.png" alt="Letter from a Sibling" />
+  <div class="envelope-card" onclick="openModal('letter1')">
+    <img src="images/envelope-icon.png" alt="Letter from a Parent" />
   </div>
 </div>
-These are filtered with the dropdown menu at the top of the Read Letters section.
+```
+- Update the modal content in `script.js` accordingly:
+```js
+const letterContent = {
+  letter1: {
+    title: "To My Child",
+    author: "A Loving Parent",
+    body: "You are stronger than you know..."
+  },
+  // Add more as needed
+};
+```
 
-💌 Submit a Letter
-Option A: Direct Form
-Users can submit a letter directly on the page. The form fields include:
+### 🔍 Filtering by Category
+- You can categorize letters using `data-category`:
+  - `parents`
+  - `siblings`
+  - `autistic`
+  - `strangers`
+- Make sure the dropdown filter in HTML includes the same categories.
 
-Name (optional)
+### 🖼️ Adding Images
+1. Upload new images to the `/images/` folder.
+2. Update `src="images/your-image.png"` in HTML.
 
-Email (optional)
+### 🧾 Editing the Welcome Message
+- Go to `index.html`
+- Locate the section with `id="welcome-section"`
+- Edit the text inside the `.intro-box`
 
-Title of the Letter
+### 📩 Submit a Letter Section
+- This section supports two options:
+  - **Option A:** Write directly on the page
+  - **Option B:** Use a REDCap form (optional)
+- To activate REDCap, replace the `href="#"` link with the actual REDCap URL.
 
-Letter content
+---
 
-Consent checkbox
+## 💻 Hosting on GitHub Pages
 
-Submissions trigger a JavaScript confirmation message.
+To deploy or update the site:
+1. Go to the repository’s **Settings > Pages**.
+2. Under **Source**, choose the `main` branch and `/ (root)` folder.
+3. Click **Save**.
+4. After a few moments, a link will appear that looks like:
+   ```
+https://bmcautismfriendly.github.io/SHARE-Space/
+```
 
-Option B: REDCap Form
-To use a REDCap form instead:
+You can now share this link!
 
-Locate this section in the HTML:
+---
 
-html
-Copy
-Edit
-<a href="#" class="redcap-button" target="_blank">Go to REDCap Form</a>
-Replace the href="#" with your actual REDCap survey link.
+## 📝 Editing Content Live on GitHub
+To edit files directly from GitHub:
+1. Go to the file (e.g., `index.html`)
+2. Click the ✏️ (pencil) icon to edit
+3. Commit changes with a helpful message
 
-🖼️ How to Add or Change Images
-To Add:
-Navigate to the /images folder in your GitHub repository.
+To add folders like `images/` or `letters/`:
+1. Click **Add file > Create new file**
+2. Name the file like `images/placeholder.txt`
+3. This creates the folder — you can now upload images via drag-and-drop into it
 
-Click Add file > Upload files.
+---
 
-Upload the new image.
+## ✅ Accessibility & Best Practices
+- All images have `alt` text for screen readers
+- The modal is accessible with `aria` tags and keyboard navigation
+- The layout is responsive on both mobile and desktop
 
-To Use in HTML:
-Update the image src path:
+---
 
-html
-Copy
-Edit
-<img src="images/your-new-image.png" alt="Your description here" />
-🛠️ How to Edit the Website
-To Edit Locally:
-Clone the repo to your desktop.
+## 🙏 A Note for Future Interns
+Thank you for continuing this project. Please:
+- Keep submissions anonymous/ not (confirm with supervisor)
+- Honor/respect the stories shared
+- Make small design updates with care and test before pushing
 
-Open index.html with VS Code or any text editor.
+Feel free to reach out to the Autism Program at BMC for guidance, or continue building this platform with love and inclusivity.
 
-Edit, save, and preview changes in your browser.
+---
 
-To Push Live:
-Commit changes via GitHub Desktop or CLI.
-
-Push to main branch.
-
-Visit the GitHub Pages site — changes are instantly live.
-
-🧠 Tips for Future Interns
-If you’re new to HTML/CSS/JS, don’t worry — the structure is intuitive.
-
-When adding letters, be consistent with naming (e.g., letter6, letter7, etc.)
-
-Always test your updates locally before pushing to GitHub.
-
-If using REDCap, coordinate with the Autism Program supervisor to update the form link.
-
+## 📄 License
+This project is developed for internal educational and outreach use. Contact the BMC Autism Program for reuse permissions.
