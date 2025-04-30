@@ -216,6 +216,73 @@ Thank you for stepping in to continue this meaningful work. Here are some helpfu
 
 ---
 
+---
+
+###  Making Edits to the Website
+
+To make changes, you can:
+
+1. Open the repository in VS Code or your preferred code editor.
+2. Navigate to the `html` or `css` files you want to change.
+3. Make changes and preview them locally if possible.
+4. Only update the `firebase rules` if you're confident in what you're doing.
+5. Push your changes or upload via GitHub.
+
+>  If you're unsure, reach out (see email below)
+
+---
+
+###  Deploying the Site
+
+If you're using Firebase Hosting:
+
+1. Install Firebase CLI (only once):
+   ```bash
+   npm install -g firebase-tools
+   ```
+
+2. Login to Firebase:
+   ```bash
+   firebase login
+   ```
+
+3. Deploy the site:
+   ```bash
+   firebase deploy
+   ```
+
+>  Always test your changes locally before deploying!
+
+---
+
+###  Glossary
+
+- **UID**: Unique ID used to identify an admin in Firebase.
+- **Modal**: A popup window on the screen (e.g., letter preview).
+- **Firebase**: A backend platform that powers this website's login and data.
+- **.read rule**: Firebase rule that controls who can view data.
+- **.write rule**: Firebase rule that controls who can submit or change data.
+
+---
+
+###  Admin Login Behavior
+
+- Admins are required to log in with their email and password.
+- After 5 minutes of inactivity, they will be automatically logged out for security reasons.
+- If you’re logged out unexpectedly, try refreshing the page or logging in again.
+
+---
+
+###  Where to Check if Something Isn't Working
+
+- **Letters not showing**: Check Firebase Database – is `approved: true` set?
+- **Login not working**: Confirm the user is listed under Firebase > Authentication
+- **Styling broken?**: Open the correct `.css` file (e.g., `parents.css`) and look for a typo
+- **Modal not opening**: Make sure the `<div class="modal">` exists in the HTML and script is linked
+
+---
+
+
 ##  Useful Link
 
 - [Firebase Console](https://console.firebase.google.com/)    
