@@ -187,5 +187,5 @@ Thank you for stepping in to continue this meaningful work. Here are some helpfu
 
 ---
 
-_If all fails and you need help with anything, please reach out to me - obidelek19@gmail.com._
+_If all fails and you need help with anything, please reach out to me - obidelek19@gmail.com. Goodluck!_
 
