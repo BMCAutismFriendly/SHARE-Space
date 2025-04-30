@@ -149,7 +149,52 @@ Add a new admin UID to your Firebase Database like this:
 
 ---
 
-## 🤎 Notes for Future Interns
+
+##  Running Locally
+
+To test the site on your local machine:
+
+1. Open `index.html` or any HTML file directly in your browser.
+2. If you make changes, simply refresh the page to see updates.
+3. Firebase features will work as long as your Firebase config is correctly included in the HTML.
+
+---
+
+##  Firebase Config (Example)
+
+Each HTML file includes a Firebase configuration block. Here’s a sample:
+
+```js
+// Inside <script type="module">
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "your-app.firebaseapp.com",
+  databaseURL: "https://your-app-default-rtdb.firebaseio.com",
+  projectId: "your-app",
+  storageBucket: "your-app.appspot.com",
+  messagingSenderId: "your-messaging-id",
+  appId: "your-app-id"
+};
+```
+
+---
+
+##  Live Demo
+
+If the site is deployed, include a link here:
+
+[Visit SHARE Space Site](https://bmcautismfriendly.github.io/SHARE-Space/)
+
+---
+
+##  Admin Workflow Notes
+
+- Admins are **not notified automatically** when new letters are submitted.
+- It is recommended to **check the admin dashboard regularly** to review and approve pending letters.
+
+---
+
+##  Notes for Future Interns
 
 ###  Hey there,
 
