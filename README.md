@@ -1,10 +1,10 @@
-# 📄 SHARE Space Website – Onboarding & Maintenance Guide
+# SHARE Space Website – Onboarding & Maintenance Guide
 
 Welcome to the SHARE Space project! This guide will help you understand how to maintain, update, and build on this website. Whether you're fixing a bug or adding a feature, everything you need to know is right here.
 
 ---
 
-## 🌟 What is SHARE Space?
+## What is SHARE Space?
 
 SHARE Space stands for **Stories, Hope, and Real Experiences** — a digital storytelling platform created for the Autism Program at Boston Medical Center.
 
@@ -17,9 +17,9 @@ It allows individuals in the autism community to:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### 1️⃣ Folder Structure Overview
+### 1 Folder Structure Overview
 
 ```
 SHARE-SPACE/
@@ -65,13 +65,12 @@ SHARE-SPACE/
 
 ---
 
-### 2️⃣ Firebase Setup
+### 2 Firebase Setup
 
 SHARE Space uses:
 
 - 🔐 **Firebase Authentication**  
 - 📂 **Firebase Realtime Database**  
-- 🌍 **Firebase Hosting**  
 - 🔒 **Firebase Rules**
 
 #### 📜 Firebase Rules
@@ -98,7 +97,7 @@ Paste this into your Firebase Realtime Database "Rules" tab:
 
 ---
 
-### 👥 Giving Admin Access
+### Giving Admin Access
 
 Add a new admin UID to your Firebase Database like this:
 
@@ -108,11 +107,11 @@ Add a new admin UID to your Firebase Database like this:
 }
 ```
 
-> 🔑 You can find the UID under the Firebase Authentication panel after creating a new user.
+>  You can find the UID under the Firebase Authentication panel after creating a new user.
 
 ---
 
-## 🔧 Key Features & Pages
+##  Key Features & Pages
 
 ### `/read.html`
 
@@ -139,7 +138,7 @@ Add a new admin UID to your Firebase Database like this:
 
 ---
 
-## ⚠️ Troubleshooting Guide
+##  Troubleshooting Guide
 
 | Problem                 | Solution                                                                 |
 |-------------------------|--------------------------------------------------------------------------|
@@ -152,11 +151,11 @@ Add a new admin UID to your Firebase Database like this:
 
 ## 🤎 Notes for Future Interns
 
-### 👋 Hey there,
+###  Hey there,
 
 Thank you for stepping in to continue this meaningful work. Here are some helpful tips to guide your journey with clarity and care.
 
-#### ✅ What To Do
+####  What To Do
 
 - Test changes on a local/dev copy before updating production  
 - Keep tone and design gentle, accessible, and welcoming  
@@ -164,7 +163,7 @@ Thank you for stepping in to continue this meaningful work. Here are some helpfu
 - Use the floating prompts to guide users  
 - Take pride in small improvements — they matter  
 
-#### ❌ What Not To Do
+####  What Not To Do
 
 - Don’t change Firebase rules unless you're confident in what you're doing  
 - Don’t rename or delete categories without full team discussion  
@@ -172,15 +171,13 @@ Thank you for stepping in to continue this meaningful work. Here are some helpfu
 
 ---
 
-## 🔗 Useful Links
+##  Useful Link
 
-- [Firebase Console](https://console.firebase.google.com/)  
-- [BMC Autism Program](https://www.bmc.org/pediatrics-autism-program)  
-- [Transparent Textures](https://www.transparenttextures.com/)  
+- [Firebase Console](https://console.firebase.google.com/)    
 
 ---
 
-## 📈 Future Wishlist
+##  Future Wishlist
 
 - Allow users to upload images with their letters  
 - Add an analytics dashboard (e.g., most read letters, submission volume by category)  
@@ -190,8 +187,5 @@ Thank you for stepping in to continue this meaningful work. Here are some helpfu
 
 ---
 
-_If you need help, please reach out to your site supervisor or the digital innovation team._
+_If all fails and you need help with anything, please reach out to me - obidelek19@gmail.com._
 
-With gratitude,  
-**SHARE Space Team**  
-_Built with care by Kehinde for the BMC Autism Program_
