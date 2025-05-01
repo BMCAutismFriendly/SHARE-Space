@@ -189,8 +189,8 @@ If the site is deployed, include a link here:
 
 ##  Admin Workflow Notes
 
-- Admins are **not notified automatically** when new letters are submitted.
-- It is recommended to **check the admin dashboard regularly** to review and approve pending letters.
+- Admins are **notified automatically** when new letters are submitted.
+- It is recommended to still **check the admin dashboard regularly** to review and approve pending letters.
 
 ---
 
